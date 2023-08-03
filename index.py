@@ -26,10 +26,17 @@ prompt = "Write about the effects of climate change."
 # Readability score: 120.21
 # Spache Readability score: 1.12
 
-response = "ㄴㅇㄹ ㅋzzz 🏃‍♂️ íåødf zzzz"
+# response = "ㄴㅇㄹ ㅋzzz 🏃‍♂️ íåødf zzzz"
 # Similarity between prompt and response: 0.4239700436592102
 # flesch_reading_ease score: 118.18
 # Spache Readability score: 1.4
+
+
+response = "Climate change, unequivocally driven by anthropogenic actions, continues to cause severe and multi-faceted consequences across the globe. There is an array of impacts affecting all components of the natural environment and human society. Firstly, a warming planet directly affects ecosystems and biodiversity. Increasing temperatures alter habitats, causing a shift in species distribution, and can disrupt ecological relationships such as pollination or predator-prey dynamics. Many species face extinction risks due to these rapid, unprecedented changes. Hydrological cycles are also being significantly disrupted. Greater evaporation rates are altering precipitation patterns, leading to more frequent and intense extreme weather events, such as hurricanes, floods, and droughts. Additionally, warmer oceans are causing thermal expansion and melting polar ice, resulting in sea-level rise. These trends have dire consequences for low-lying areas, potentially leading to displacement of human populations and loss of coastal ecosystems."
+# Similarity between prompt and response: 0.7181610465049744
+# flesch_reading_ease score: 30.57
+# Spache Readability score: 6.74
+
 
 
 prompt_tokens = tokenizer.encode(prompt, return_tensors='pt')
@@ -104,3 +111,14 @@ print(f"Spache Readability score: {spache_readability(response)}")
 # Spache Readability score: 7.22
 
 
+# 12 Grade level
+# Climate change is a profound global issue affecting our planet and its ecosystems in various ways. The ramifications of this phenomenon are extensive, impacting not only environmental aspects, but also economic, political, and societal ones. In terms of environmental impacts, climate change primarily results in a shift in global temperatures, leading to a warmer Earth. This increase in heat causes glaciers and ice caps to melt at a faster rate, leading to sea level rise. Coastal cities and island nations face the threat of inundation, posing a significant risk to people's homes, infrastructure, and livelihoods. Moreover, the increase in temperature disrupts the delicate balance of many ecosystems, leading to species migration or even extinction in extreme cases. Another critical consequence is the increased frequency and intensity of extreme weather events. Storms, heatwaves, droughts, and floods are becoming more common and severe due to climate change, causing significant damage to infrastructure, agriculture, and even causing loss of life.
+# Similarity between prompt and response: 0.720102071762085
+# flesch_reading_ease score: 43.12
+# Spache Readability score: 6.34
+
+# professional level
+# Climate change, unequivocally driven by anthropogenic actions, continues to cause severe and multi-faceted consequences across the globe. There is an array of impacts affecting all components of the natural environment and human society. Firstly, a warming planet directly affects ecosystems and biodiversity. Increasing temperatures alter habitats, causing a shift in species distribution, and can disrupt ecological relationships such as pollination or predator-prey dynamics. Many species face extinction risks due to these rapid, unprecedented changes. Hydrological cycles are also being significantly disrupted. Greater evaporation rates are altering precipitation patterns, leading to more frequent and intense extreme weather events, such as hurricanes, floods, and droughts. Additionally, warmer oceans are causing thermal expansion and melting polar ice, resulting in sea-level rise. These trends have dire consequences for low-lying areas, potentially leading to displacement of human populations and loss of coastal ecosystems.
+# Similarity between prompt and response: 0.7181610465049744
+# flesch_reading_ease score: 30.57
+# Spache Readability score: 6.74
